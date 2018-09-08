@@ -1,0 +1,143 @@
+:root {
+  --color-red: #ef233c;
+  --color-white: #edf2f4;
+  --color-grey: #8d99ae;
+  --color-green: #79b473;
+  --color-green-dark: #2c514c;
+  --color-green-success: #4bb543;
+  --color-blue: #084c61;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --line: 1px solid var(--color-grey-light-2); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  background-image: linear-gradient(to left, var(--color-white), var(--color-grey));
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*min-height: 100%;*/
+  /*min-height: 100vh;*/ }
+
+html,
+body {
+  min-height: 100%; }
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
+  min-height: 100vh; }
+
+.app-container {
+  position: relative;
+  width: 85%;
+  background-color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  /*min-height: 85rem;*/ }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 3rem;
+  min-height: 100%; }
+
+.cryptogramContainer {
+  display: flex;
+  flex-wrap: wrap; }
+
+.cryptogramForm {
+  margin-top: 3rem;
+  position: relative; }
+
+.letter {
+  margin: 0 1px;
+  font-size: 3.4rem;
+  text-align: center; }
+
+.space {
+  transform: translateY(-2px); }
+
+.charInput {
+  height: 3.4rem;
+  width: 3.5rem;
+  font-size: 3.4rem;
+  text-align: center; }
+
+.charContainer {
+  padding: 0 2px;
+  max-width: 5rem;
+  margin-bottom: 2rem; }
+
+.wordContainer {
+  display: flex;
+  margin-right: 2.5rem; }
+
+.btn {
+  position: relative;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  background-color: var(--color-blue);
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer; }
+  .btn:focus {
+    outline: none; }
+
+.btn-left {
+  margin-left: 5rem; }
+
+.btn-container {
+  padding-top: 2rem;
+  padding-bottom: 3rem; }
+  .btn-container__center {
+    display: flex;
+    justify-content: center; }
+
+.error-container {
+  display: flex;
+  justify-content: center;
+  color: var(--color-red);
+  font-size: 2rem;
+  text-transform: uppercase; }
+
+.solved-container {
+  display: flex;
+  justify-content: center;
+  color: var(--color-green-success);
+  font-size: 2rem;
+  text-transform: uppercase; }
+
+@media only screen and (max-width: 600px) {
+  .letter {
+    font-size: 1.6rem; }
+  .charInput {
+    height: 1.7rem;
+    width: 1.7rem;
+    font-size: 1.6rem; }
+  .wordContainer {
+    margin-right: 1rem; }
+  .app-container {
+    width: 100%; }
+  .main-container {
+    padding: 0; }
+  .btn-container {
+    display: flex;
+    justify-content: center; } }

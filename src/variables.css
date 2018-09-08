@@ -1,0 +1,11 @@
+:root {
+  --color-red: #ef233c;
+  --color-white: #edf2f4;
+  --color-grey: #8d99ae;
+  --color-green: #79b473;
+  --color-green-dark: #2c514c;
+  --color-green-success: #4bb543;
+  --color-blue: #084c61;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --line: 1px solid var(--color-grey-light-2); }
